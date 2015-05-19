@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "editor-style.css": {
+      "files": [
+        "styles/editor-style.scss"
+      ]
+    },
+    "modernizr.js": {
+      "bower": ["modernizr"]
+    },
+    "jquery-modern.js": {
+      "bower": ["jquery-modern"]
+    },
+    "jquery-legacy.js": {
+      "bower": ["jquery-legacy"]
+    }
+  },
+  "config": {
+    "devUrl": "http://example.dev"
+  }
+}
