@@ -4,6 +4,7 @@ Code for quickly setting up a minor site. We have taken Sage (see below for deta
 
 Start each page by requiring functions.php. Once you have done that, you can include an asset like so: `<link rel="stylesheet" href="<?php echo Roots\Sage\Assets\asset_path('styles/main.css'); ?>">`
 
+Also includes helpers to vardump and dump and die (`fewture\vd()` and `fewture\dd()`)
 
 # [Sage](https://roots.io/sage/)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
