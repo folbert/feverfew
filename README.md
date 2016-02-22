@@ -1,10 +1,30 @@
 #feverfew
 
-Code for quickly setting up a minor site. We have taken Sage (see below for details on Sage) and stripped it of everything but its excellent handling of assets using Gulp.
+Code for quickly setting up a smaller site. We have taken [Sage](https://roots.io/sage/) and stripped it of everything but its excellent handling of assets using Gulp and a manifest-file.
+
+We have also added some optional routing and templating functionality in an, for lack of a better name, "advanced" version.
+
+##Advanced version
+The "advanced" version comes with the following features:
+
+- Routing courtsey of [Altorouter](http://altorouter.com/)
+- Templating using [philo/laravel-blade](https://github.com/PhiloNL/Laravel-Blade)
+- All the above is installed using [Composer](https://getcomposer.org)
+
+Install using these steps:
+1. Run `composer install`
+2. Delete index.basic.php
+3. Install Sage as described below.
+4. Set up some routes in index.php and start templating!
+
+##Basic versiom
+If you are only cerating one simple page, this is probably a better option.
+
+1. Delete blade-cache/, blade-views/, composer.json, composer.lock, index.php, and .htaccess
+2. Rename index.basic.php to index.php
+3. Install Sage as descibed below.
 
 Start each page by requiring functions.php. Once you have done that, you can include an asset like so: `<link rel="stylesheet" href="<?php echo Roots\Sage\Assets\asset_path('styles/main.css'); ?>">`
-
-Also includes helpers to vardump and dump and die (`fewture\vd()` and `fewture\dd()`)
 
 # [Sage](https://roots.io/sage/)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
