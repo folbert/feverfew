@@ -1,7 +1,6 @@
 <?php
 
 require 'vendor/autoload.php';
-
 require_once('functions.php');
 
 $router = new AltoRouter();

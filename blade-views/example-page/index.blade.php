@@ -6,7 +6,7 @@
   <!-- Example row of columns -->
   <div class="row">
     <div class="col-xs-12">
-      Page 2
+      Page 2 using example-page/index.blade.php
     </div>
   </div>
 

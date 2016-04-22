@@ -1,30 +1,44 @@
-#feverfew
+# Feverfew
 
-Code for quickly setting up a smaller site. We have taken [Sage](https://roots.io/sage/) and stripped it of everything but its excellent handling of assets using Gulp and a manifest-file.
+Code for quickly setting up a simple site. We have taken [Sage](https://roots.io/sage/) and stripped it of everything related to WordPress. What we are left with is the excellent handling of assets.
 
 We have also added some optional routing and templating functionality in an, for lack of a better name, "advanced" version.
 
 ##Advanced version
-The "advanced" version comes with the following features:
+The advanced version comes with the following features:
 
-- Routing courtsey of [Altorouter](http://altorouter.com/)
-- Templating using [philo/laravel-blade](https://github.com/PhiloNL/Laravel-Blade)
-- All the above is installed using [Composer](https://getcomposer.org)
+* Routing courtsey of [Altorouter](http://altorouter.com/)
+* Templating using [philo/laravel-blade](https://github.com/PhiloNL/Laravel-Blade)
+* All the above is installed using [Composer](https://getcomposer.org)
 
-Install using these steps:
-1. Run `composer install`
-2. Delete index.basic.php
-3. Install Sage as described below.
-4. Set up some routes in index.php and start templating!
+### Installing advanced version
+
+1. Download the [latest version of Feverfew](https://github.com/fewagency/feverfew/releases)
+2. Run `composer install`
+3. Delete index.basic.php
+4. Install Sage as described below.
+5. Set up some routes in index.php and start coding!
+
+### Working with the advanced version
+Place your views in blade-views. Read how to create routes at [altorouter.com](http://altorouter.com/) and how to work with the templates in the [Readme of PhiloNL/Laravel-Blade](https://github.com/PhiloNL/Laravel-Blade/blob/master/readme.md).
 
 ##Basic versiom
-If you are only cerating one simple page, this is probably a better option.
+If you are only creating one simple page, this is probably a better option than the advanced one.
 
-1. Delete blade-cache/, blade-views/, composer.json, composer.lock, index.php, and .htaccess
-2. Rename index.basic.php to index.php
-3. Install Sage as descibed below.
+### Installing basic version
 
-Start each page by requiring functions.php. Once you have done that, you can include an asset like so: `<link rel="stylesheet" href="<?php echo Roots\Sage\Assets\asset_path('styles/main.css'); ?>">`
+1. Download the [latest version of Feverfew](https://github.com/fewagency/feverfew/releases)
+2. Delete blade-cache/, blade-views/, composer.json, composer.lock, index.php, and .htaccess
+3. Rename index.basic.php to index.php
+4. Install Sage as described below.
+5. Start coding!
+
+### Working with the basic version
+Start each page by requiring functions.php. Once you have done that, you can include an asset like so: `<link rel="stylesheet" href="<?php echo Roots\Sage\Assets\asset_path('styles/main.css'); ?>">` where the file name is one specified on assets/manifest.json.
+
+Below is the content of the Readme of the verison of Sage currently used by Feverfew.
+
+---
 
 # [Sage](https://roots.io/sage/)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
