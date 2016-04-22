@@ -36,6 +36,9 @@ If you are only creating one simple page, this is probably a better option than 
 ### Working with the basic version
 Start each page by requiring functions.php. Once you have done that, you can include an asset like so: `<link rel="stylesheet" href="<?php echo Roots\Sage\Assets\asset_path('styles/main.css'); ?>">` where the file name is one specified on assets/manifest.json.
 
+## Authors
+I, [Björn Folbert](http://folbert.com), work at the largest communication agency in southern Sweden. We call ourselves [FEW](http://fewagency.se) (oh, the irony). From time to time we have positions open for web developers and programmers in the Malmö/Copenhagen area, so please get in touch using [bjorn.folbert@fewagency.se](bjorn.folbert@fewagency.se) if you want to know more!
+
 Below is the content of the Readme of the verison of Sage currently used by Feverfew.
 
 ---
