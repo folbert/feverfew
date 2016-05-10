@@ -2,4 +2,5 @@ bower_components
 node_modules
 .idea
 vendor
+dist
 .DS_Store
