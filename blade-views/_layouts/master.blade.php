@@ -51,12 +51,16 @@
 
   @yield('maincontent')
 
-  <hr>
-
-  <footer>
-    <p>&copy; Company 2015</p>
-  </footer>
-</div> <!-- /container -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <hr>
+        <p>&copy; Company 2015</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <script src="{{ Roots\Sage\Assets\asset_path('scripts/modernizr.js') }}"></script>
 
