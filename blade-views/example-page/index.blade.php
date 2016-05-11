@@ -9,5 +9,6 @@
       Page 2 using example-page/index.blade.php
     </div>
   </div>
+</div>
 
 @endsection('maincontent')
