@@ -22,7 +22,7 @@ The advanced version comes with the following features:
 ### Working with the advanced version
 Place your views in blade-views. Read how to create routes at [altorouter.com](http://altorouter.com/) and how to work with the templates in the [Readme of PhiloNL/Laravel-Blade](https://github.com/PhiloNL/Laravel-Blade/blob/master/readme.md).
 
-##Basic versiom
+##Basic version
 If you are only creating one simple page, this is probably a better option than the advanced one.
 
 ### Installing basic version
